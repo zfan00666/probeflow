@@ -1,0 +1,57 @@
+# do not change max_action_dim, max_state_dim, max_views
+max_action_dim: 24
+max_state_dim: 24
+max_views: 3
+
+data_groups:
+  metaworld_sawyer:
+    Evo1_MetaWorld:
+      path: /mnt/data_ssd/zhoufang/code/probeflow/MetaWorld_evaluation/Metaworld_Dataset/Evo1_MetaWorld_Dataset
+      view_map:
+        image_1: observation.images.image
+
+
+
+  # This is an example of how to configure multi-task training for LIBERO.
+  # The libero dataset is from https://huggingface.co/collections/IPEC-COMMUNITY/libero-benchmark-dataset
+
+  # libero_franka:
+  #   libero_spatial_no_noops_1.0.0_lerobot:
+  #     path: /share/taolin/datasets/libero/libero_spatial_no_noops_1.0.0_lerobot
+  #     view_map:
+  #       image_1: observation.images.image
+  #       image_2: observation.images.wrist_image
+
+  #   libero_object_no_noops_1.0.0_lerobot:
+  #     path: /share/taolin/datasets/libero/libero_object_no_noops_1.0.0_lerobot
+  #     view_map:
+  #       image_1: observation.images.image
+  #       image_2: observation.images.wrist_image
+
+  #   libero_goal_no_noops_1.0.0_lerobot:
+  #     path: /share/taolin/datasets/libero/libero_goal_no_noops_1.0.0_lerobot
+  #     view_map:
+  #       image_1: observation.images.image
+  #       image_2: observation.images.wrist_image
+
+  #   libero_10_no_noops_1.0.0_lerobot:
+  #     path: /share/taolin/datasets/libero/libero_10_no_noops_1.0.0_lerobot
+  #     view_map:
+  #       image_1: observation.images.image
+  #       image_2: observation.images.wrist_image
+
+
+
+
+
+
+
+  # This is an example of how to configure the dataset path and view mapping for RoboTwin
+
+  # robotwin_robot:
+  # click_alarmclock_v2.1:
+  #   path: /share/taolin/datasets/robotwin/click_alarmclock_v2.1
+  #   view_map:
+  #     image_1: observation.images.image_1
+  #     image_2: observation.images.image_2
+  #     image_3: observation.images.image_3

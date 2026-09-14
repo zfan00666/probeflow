@@ -1,0 +1,12 @@
+# do not change max_action_dim, max_state_dim, max_views
+max_action_dim: 24
+max_state_dim: 24
+max_views: 3
+
+data_groups:
+  libero_panda:
+    HuggingFaceVLA_libero:
+      path: /mnt/data/zhoufang/data/lerobot/HuggingFaceVLA/libero
+      view_map:
+        image_1: observation.images.image
+        image_2: observation.images.image2
